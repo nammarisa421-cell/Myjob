@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>การอนุรักษ์สิ่งแวดล้อม</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff;
+        }
+
+        nav {
+            background: #0288d1;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #81d4fa;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Hero section แบบมีรูปใหญ่ */
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+        .hero img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .hero h2 {
+            margin-top: 20px;
+            font-size: 36px;
+            color: #0288d1;
+        }
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.3s;
+        }
+        .card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            background: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="page2.html">ความรู้</a>
+    <a href="page3.html">การอนุรักษ์</a>
+    <a href="page4.html">ประโยชน์</a>
+</nav>
+
+<header>
+    <h1>การอนุรักษ์สิ่งแวดล้อม</h1>
+</header>
+
+<!-- Hero Image ใหญ่ -->
+<section class="hero">
+    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e" 
+         alt="ภาพการปลูกต้นไม้เพื่ออนุรักษ์สิ่งแวดล้อม">
+    <h2>เริ่มการอนุรักษ์วันนี้</h2>
+    <p>เรียนรู้วิธีดูแลโลกของเราอย่างยั่งยืน ลดมลพิษ ฟื้นฟูทรัพยากรธรรมชาติ และสร้างอนาคตที่ยั่งยืน</p>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h2>♻️ การรีไซเคิลและจัดการขยะ</h2>
+        <p>การรีไซเคิลคือการนำวัสดุที่ใช้แล้วกลับมาใช้ใหม่ เช่น กระดาษ ขวดพลาสติก โลหะ และแก้ว ลดปริมาณขยะที่ฝังดินและประหยัดทรัพยากรธรรมชาติ</p>
+        <ul>
+            <li>แยกขยะเปียก ขยะแห้ง และขยะรีไซเคิล</li>
+            <li>นำวัสดุเหลือใช้มาแปรรูปเป็นผลิตภัณฑ์ใหม่</li>
+            <li>ลดการใช้บรรจุภัณฑ์พลาสติกแบบใช้ครั้งเดียวทิ้ง</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🌳 การปลูกต้นไม้และฟื้นฟูป่า</h2>
+        <p>ต้นไม้ช่วยดูดซับคาร์บอนไดออกไซด์ เพิ่มออกซิเจน ลดมลพิษทางอากาศ และช่วยปรับอุณหภูมิโลก</p>
+        <ul>
+            <li>ปลูกไม้ยืนต้นในชุมชนและพื้นที่ว่าง</li>
+            <li>อนุรักษ์ป่าธรรมชาติและพื้นที่ชุ่มน้ำ</li>
+            <li>สนับสนุนโครงการฟื้นฟูป่าหรือปลูกป่าชุมชน</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>💧 การประหยัดน้ำและพลังงาน</h2>
+        <p>การใช้น้ำและพลังงานอย่างรู้คุณค่า ลดการสูญเสียทรัพยากร ลดมลพิษ และลดค่าใช้จ่าย</p>
+        <ul>
+            <li>ปิดไฟและเครื่องใช้ไฟฟ้าเมื่อไม่ใช้งาน</li>
+            <li>ใช้อุปกรณ์ประหยัดพลังงาน เช่น LED หรือ Solar Panel</li>
+            <li>ลดการใช้น้ำอย่างไม่จำเป็น เช่น ปิดก๊อกน้ำระหว่างทำกิจกรรม</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🚴 การใช้การเดินทางอย่างยั่งยืน</h2>
+        <p>ลดการใช้รถส่วนตัว ใช้จักรยาน เดิน หรือระบบขนส่งสาธารณะเพื่อลดก๊าซเรือนกระจกและมลพิษ</p>
+        <ul>
+            <li>ใช้จักรยานหรือเดินไปยังสถานที่ใกล้เคียง</li>
+            <li>ใช้ระบบขนส่งสาธารณะ เช่น รถเมล์ รถไฟฟ้า</li>
+            <li>ร่วม Carpool กับเพื่อนหรือเพื่อนร่วมงาน</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>เริ่มต้นอนุรักษ์สิ่งแวดล้อมวันนี้ เพื่อโลกที่ดีขึ้น 🌍</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        if(card.getBoundingClientRect().top < window.innerHeight - 50){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
